@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 11, 2024 at 02:24 PM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Generation Time: Feb 28, 2024 at 05:06 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -124,8 +124,8 @@ CREATE TABLE `tbl_produk` (
 --
 
 INSERT INTO `tbl_produk` (`id_produk`, `kode_produk`, `nama_produk`, `harga_beli`, `harga_jual`, `jumlah_produk`, `stok`) VALUES
-(9, 'PRD01', 'Tas Ransel', 80000, 240000, '0.00', 10),
-(10, 'PRD02', 'Tas Selempang', 50000, 150000, '0.00', 20);
+(9, 'PRD01', 'Tas Ransel', 80000, 240000, 0.00, 10),
+(10, 'PRD02', 'Tas Selempang', 50000, 150000, 0.00, 20);
 
 -- --------------------------------------------------------
 
@@ -147,8 +147,8 @@ CREATE TABLE `tbl_user` (
 --
 
 INSERT INTO `tbl_user` (`id_user`, `kode_user`, `nama`, `email`, `password`, `level`) VALUES
-(6, 'USR01', 'yayang', 'admin@gmail.com', '5e9795e3f3ab55e7790a6283507c085db0d764fc', 1),
-(7, 'USR02', 'sifa', 'kasir@gmail.com', '5e9795e3f3ab55e7790a6283507c085db0d764fc', 2);
+(8, 'USR03', 'tika', 'yustika02@gmail.com', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 1),
+(9, 'USR04', 'meli', 'kamilaeni@gmail.com', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', 2);
 
 --
 -- Indexes for dumped tables
@@ -219,7 +219,7 @@ ALTER TABLE `tbl_produk`
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
